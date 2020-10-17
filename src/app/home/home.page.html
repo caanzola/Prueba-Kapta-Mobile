@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Prueba Kapta
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Prueba Kapta</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <img src="{{photo}}">
+  </div>
+
+  <div id="but">
+    <ion-button expand="block" (click) = "openCamera()">Tomar foto</ion-button>  
+  </div>
+
+  
+</ion-content>

@@ -1,0 +1,10 @@
+{
+  "name": "kaptaApp",
+  "integrations": {
+    "capacitor": {
+      "enabled": false
+    },
+    "cordova": {}
+  },
+  "type": "angular"
+}

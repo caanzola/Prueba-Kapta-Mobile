@@ -25,13 +25,19 @@ export class HomePage {
       // imageData is either a base64 encoded string or a file URI
       // If it's base64 (DATA_URL):
       this.photo = 'data:image/jpeg;base64,' + imageData;
-      watermark([this.photo, 'http://pokeres.bastionbot.org/images/pokemon/1.png'])
-      .image(watermark.image.lowerRight(0.5))
+      watermark([this.photo, '../../assets/1.png'])
+      .image(watermark.image.lowerLeft(0.5))
+      .then(img => document.getElementById('container').appendChild(img));
+
+       watermark([this.photo])
+      .image(watermark.text.lowerLeft('watermark.js', '15px sans-serif', '#fff', 0.5))
       .then(img => document.getElementById('container').appendChild(img));
      }, (err) => {
       // Handle error
      });
 
+     
+     
   }
 
   openCamera(){

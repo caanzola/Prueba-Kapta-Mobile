@@ -12,4 +12,6 @@ En iOS: `ionic cordova run iOS`
 
 # Vista previa
 
+![](./images/1.png)
+![](./images/2.png)
 
